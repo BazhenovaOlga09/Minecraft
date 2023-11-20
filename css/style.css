@@ -1,0 +1,412 @@
+body{
+    background-color:var(--main-bg-color);
+    font-family: 'Noto Sans', sans-serif;
+
+}
+
+/* =======header */
+.main-header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 3;
+}
+.container {
+}
+.main-header__content {
+}
+.main-header__top {
+    text-align: right;
+    background-color:var(--main-bg-color);
+    
+}
+.link-action {
+    color: var(--text-color-main);
+}
+
+.main-header__bottom{
+    padding: 15px 0px;
+    background-image: url(../img/header-bg.jpg);
+    
+}
+
+.main-header__bottom .container {
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+
+}
+.logo {
+    display: inline-block;
+    width: 400px;
+}
+.menu__list {
+    display: flex;
+    column-gap: 20px;
+}
+.link-other-page {
+}
+.link-other-page__wrapper-img {
+    display: inline-block;
+    width: 100px;
+    height: 100px;
+    vertical-align: middle;
+}
+
+.link-other-page__wrapper-img:hover{
+    opacity: 0.7;
+    transform: scale(1.07);
+    background-color: rgba(39, 34, 32, 0.521);
+}
+
+.link-other-page__text {
+    color: var(--text-color-main);
+    font-size: 22px;
+    font-weight: 600;
+
+}
+
+/* main */
+.main-info {
+    padding: 200px 0 40px ;
+}
+
+.main-info__content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image:linear-gradient(180deg,rgba(0, 0, 0, 0.6) 0%,rgba(0, 0, 0, 0.6) 0.01%, rgba(18, 18, 21, 0.1) 100%), url(../img/fon-mine.jpeg);
+    height: 80vh;
+    background-repeat:no-repeat ;
+    background-size: cover;
+}
+.main-info__text {
+    font-size: 30px;
+    max-width: 750px;
+    font-weight: 600;
+    text-align: center;
+    color: var(--text-color-main);
+    text-shadow: 3px 3px 3px #000;
+}
+
+.section-title{
+    color: var(--text-color-main);
+    font-size: 2em;
+    font-weight: 600;
+    text-align: center;
+    margin-bottom: 20px;
+
+}
+
+/* Слайдеры */
+.section-slayders {
+    padding-top: 200px;
+    padding-bottom: 100px;
+}
+
+.slayder {
+    max-width: 600px;
+    height: 300px;
+    margin: 0 auto;
+    position: relative;
+    border: solid 2px #ffffff;
+    border-radius: 10px;
+    padding: 20px 0;
+    box-shadow: 0 0 10px 4px #fff, inset 0 0 10px 4px #fff;
+}
+.slayder__item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 300px;
+    height: 250px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin: 0 20px;
+    
+    
+}
+
+/* surviol */
+.slayder__item--first{
+    background-image: url(../img/slayder/surviol_2.jpg);
+}
+
+.slayder__item:nth-child(2){
+    background-image: url(../img/slayder/surviol_2.jpg);
+    background-position: 0 -70px;
+    
+}
+
+.slayder__item-text{
+    font-size: 17px;
+    font-weight: 550;
+    color: var(--text-color-main);
+    padding: 0 10%;
+    text-shadow: 3px 3px 3px #000;
+    text-align: center;
+    
+}
+
+.slayder__item:nth-child(3){
+    background-image: url(../img/slayder/surviol_3.jpg);
+}
+
+.slayder__item:nth-child(4){
+    background-image: url(../img/slayder/surviol_4.jpg);
+}
+
+
+/* creative */
+.slayder__item--next-slayder:nth-child(1){
+    background-image: linear-gradient(180deg,rgba(0, 0, 0, 0.6) 0%,rgba(0, 0, 0, 0.6) 0.01%, rgba(18, 18, 21, 0.1) 100%), url(../img/slayder/creative_1.jpg);
+}
+
+.slayder__item--next-slayder:nth-child(2){
+    background-image: linear-gradient(180deg,rgba(0, 0, 0, 0.6) 0%,rgba(0, 0, 0, 0.6) 0.01%, rgba(18, 18, 21, 0.1) 100%), url(../img/slayder/creative_1.jpg);
+}
+
+.slayder__item--next-slayder:nth-child(3){
+    background-image:linear-gradient(180deg,rgba(0, 0, 0, 0.6) 0%,rgba(0, 0, 0, 0.6) 0.01%, rgba(18, 18, 21, 0.1) 100%), url(../img/slayder/creative_2.jpg);
+}
+
+.slayder__item--next-slayder:nth-child(4){
+    background-image:linear-gradient(180deg,rgba(0, 0, 0, 0.6) 0%,rgba(0, 0, 0, 0.6) 0.01%, rgba(18, 18, 21, 0.1) 100%), url(../img/slayder/creative_3.jpg);
+}
+
+.slick-list{
+    overflow: hidden;
+
+}
+
+.slick-track{
+    display: flex;
+
+}
+/* Стрелочки */
+.slider__arrow{
+    width: 40px;
+    height: 40px;
+    font-size: 0;
+    line-height: 0;
+    position: absolute;
+    top: 50%;
+    z-index: 2;
+    transform: translateY(-50%) scale(1);
+    transition:transform 0.5s;
+
+}
+
+.slider__arrow--left{
+    left: -60px;
+}
+
+.slider__arrow--right{
+    right: -60px;
+    
+}
+
+.slayder-color__hover{
+    transition: stop-color 0.5s;
+}
+
+.slider__arrow:hover .slayder-color__hover{
+    stop-color: rgb(11, 53, 54);
+}
+
+.slider__arrow:hover{
+    transform: translateY(-50%) scale(1.3);
+    
+}
+
+.slick-dots{
+    position: absolute;
+    bottom: -40px;
+    display: flex;
+    left: 50%;
+    transform: translateX(-50%);
+    column-gap: 15px;
+}
+
+.slick-dots button{
+    width: 15px;
+    height: 15px;
+    background-color: #c2c0c0;
+    border-radius: 50%;
+    font-size: 0;
+    line-height: 0;
+    transition: transform 0.5s, backgroun-color 0.5s;
+}
+
+.slick-active button{
+    background-color:rgb(32, 134, 136);
+    transform: scale(1.3);
+
+}
+
+/* start-game */
+
+.start-game {
+}
+
+.start-game__content {
+    padding-top: 200px;
+}
+
+.card-info {
+    padding: 40px 0;
+}
+.card-info__text {
+    color: var(--text-color-main);
+    max-width: 60%;
+    margin: 0 auto;
+    text-align: center;
+    margin-bottom: 25px;
+    font-size: 19px;
+    font-weight: 500;
+    text-shadow: 5px 5px 3px #243632;
+}
+.card-info__image {
+    text-align: center;
+    margin: 0 auto;
+    max-width: 60%;
+}
+
+
+
+
+
+
+/* footer */
+.main-footer {
+    margin-top: auto;
+}
+.main-footer__border {
+    margin: -30px auto 10px;
+	padding: 0;
+	height: 50px;
+	border: none;
+	border-bottom: 1px solid #ffffff;
+	box-shadow: 0 20px 20px -20px #777676;
+	width: 95%;
+}
+
+.main-footer__content {
+    display: flex;
+    justify-content: space-between;
+    padding: 30px 0;
+}
+
+.social-list {
+    display: flex;
+    column-gap: 30px;
+}
+
+.svg-icons{
+    width: 40px;
+    height: 40px;
+    fill:#fff;
+}
+
+.social-list__item:hover .svg-icons {
+    fill: rgb(89, 114, 64);
+    /* background-color: aquamarine; */
+    /* stroke: rgb(89, 114, 64);     */
+}
+
+/* adaptiv */
+@media (max-width:1024px){
+    .logo {
+        width: 200px;
+    }
+    .link-other-page__text {
+        display: block;
+        font-size: 18px;
+        font-weight: 500;
+    }
+    .link-other-page{
+        min-width: 156px;
+        display: inline-block;
+        text-align: center;
+    }
+    .link-other-page__wrapper-img {
+        width: 80px;
+        height: 80px;
+    }
+}
+
+@media (max-width:768px){
+    .slider__arrow{
+        display: none;
+    }
+    .section-title{
+        font-size: 1.5em;
+    }
+    .section-slayders:first-child {
+        padding-top: 250px;
+        padding-bottom: 0px;
+    }
+
+}
+
+@media(max-width:570px){
+    .main-footer__content,
+    .main-header__bottom .container {
+    display: flex;
+    flex-direction: column;
+    row-gap: 20px;
+    align-items: center;
+    }
+    .main-info{
+        padding:270px 0 40px
+    }
+    .main-info__text {
+        font-size: 18px;
+        max-width: 500px;
+        font-weight: 400;
+    }
+    .slayder__item:nth-child(2) {
+        background-position: 0 -5px;
+    }
+    .card-info__text{
+        font-size: 15px;
+        font-weight: 500;
+    }
+    .card-info{
+        padding-bottom: 40px;
+        padding-top: 0;
+    }
+    .start-game__content {
+        padding-top: 250px;
+    }
+    .section-title{
+        font-size: 1.2em;
+    }
+}
+
+@media (max-width:375px){
+    .link-other-page__text {
+        font-size: 15px;
+        font-weight: 500;
+    }
+    .main-info__text {
+        font-size: 15px;
+        max-width: 500px;
+        font-weight: 400;
+    }
+    .link-other-page__wrapper-img {
+        width: 80px;
+        height: 80px;
+    }
+    .link-other-page{
+        min-width: 105px;
+    }
+    .menu__list{
+        column-gap: 0;
+    }
+    .card-info__text{
+        font-size: 12px;
+        font-weight: 400;
+    }
+}
